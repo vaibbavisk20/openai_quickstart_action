@@ -29,7 +29,7 @@ Template: [ChatGPT-like Python app using Azure OpenAI](https://github.com/Azure-
 
 ## Optional Inputs
 
-Further customization of resources like quota, tier, etc... can be done by passing in [variables](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/infra/main.parameters.json) as seen below.  [Template documentation](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/README.md)
+Further customization of resources like quota, tier, etc... can be done by passing in [variables](https://github.com/Azure-Samples/openai-chat-app-quickstart/blob/main/infra/main.parameters.json) as seen below.  [Template documentation](https://github.com/Azure-Samples/openai-chat-app-quickstart/blob/main/docs/README.md)
 
 ````yaml
 - name: Deploy Open AI infrastructure action execution
@@ -37,7 +37,7 @@ Further customization of resources like quota, tier, etc... can be done by passi
   with:
     ...
     additional-args: '{
-      "AZURE_APP_SERVICE_SKU":"B2", 
+      "AZURE_OPENAI_SKU_NAME":"S0", 
     }'
 ````
 
