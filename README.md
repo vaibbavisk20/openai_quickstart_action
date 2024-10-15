@@ -93,7 +93,7 @@ jobs:
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
           
       - name: Deploy Open AI infrastructure action execution
-        uses: ./.github/actions/chatquickstart
+        uses: Azure/Sample-Quickstart-Chat-OpenAI-Infra@v1
         with:
           location: ${{ vars.AZURE_LOCATION }}
           env-name: ${{ vars.AZURE_ENV_NAME }}
