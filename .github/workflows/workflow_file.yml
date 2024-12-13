@@ -1,9 +1,9 @@
 name: Workflow to deploy quickstart chat app
 
 on:
-#   push:
-#     branches:
-#       - main
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
